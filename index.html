@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Valentine ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 35px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+            animation: fadeIn 5s ease-in-out;
+        }
+
+        .heart {
+            font-size: 60px;
+            animation: beat 1s infinite;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            background-color: white;
+            color: #ff4b7d;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+        button:hover {
+            background-color: #ffe6ec;
+        }
+
+        @keyframes beat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Happy Valentine's Day My Love ❤️</h1>
+    
+    <div class="heart">💖</div>
+
+    <p>
+        From the moment you came into my life,  
+        everything became more beautiful.  
+        You are my happiness, my peace,  
+        and my forever. 💕
+    </p>
+
+    <button onclick="showMessage()">Click for a Surprise 💌</button>
+
+    <p id="hiddenMessage" style="display:none; margin-top:20px; font-size:22px;">
+        Will you be my forever Valentine? 💍❤️
+    </p>
+</div>
+
+<script>
+function showMessage() {
+    document.getElementById("hiddenMessage").style.display = "block";
+}
+</script>
+
+</body>
+</html>
