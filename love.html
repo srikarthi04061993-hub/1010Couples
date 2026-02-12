@@ -80,6 +80,18 @@
 <div class="heart" style="left:70%; animation-duration:10s;">🩶</div>
 <div class="heart" style="left:85%; animation-duration:5s;">🩶</div>
 
+<audio id="bgMusic" loop>
+    <source src="anbe en anbe.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    document.body.addEventListener("click", function() {
+        var music = document.getElementById("bgMusic");
+        music.play();
+    }, { once: true });
+</script>
+
+
     
 
 </body>
