@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Valentine ❤️</title>
+    <title>Happy Valentine's Day ❤️</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             margin: 0;
-            padding: 0;
-            background: linear-gradient(to right, #ff758c, #ff7eb3);
-            font-family: 'Arial', sans-serif;
-            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #4a4a4a;
             color: white;
+            text-align: center;
         }
 
         .container {
@@ -18,46 +17,44 @@
         }
 
         h1 {
-            font-size: 35px;
-            animation: fadeIn 3s ease-in-out;
+            font-size: 36px;
+            margin-bottom: 10px;
         }
 
-        p {
-            font-size: 20px;
-            margin-top: 20px;
-            animation: fadeIn 5s ease-in-out;
-        }
-
-        .heart {
-            font-size: 60px;
-            animation: beat 1s infinite;
-            margin-top: 20px;
-        }
-
-        button {
-            padding: 15px 30px;
+        .romantic-text {
             font-size: 18px;
-            border: none;
-            border-radius: 30px;
-            background-color: white;
-            color: #ff4b7d;
-            cursor: pointer;
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .photo-section img {
+            width: 250px;
+            margin: 15px;
+            border-radius: 15px;
+        }
+
+        .buttons {
             margin-top: 30px;
         }
 
+        .buttons a {
+            text-decoration: none;
+        }
+
+        button {
+            padding: 12px 25px;
+            margin: 10px;
+            border: none;
+            border-radius: 25px;
+            background-color: #ff4b7d;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
         button:hover {
-            background-color: #ffe6ec;
-        }
-
-        @keyframes beat {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.2); }
-            100% { transform: scale(1); }
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            background-color: #ff1f5a;
         }
     </style>
 </head>
@@ -66,28 +63,30 @@
 
 <div class="container">
     <h1>Happy Valentine's Day My Love ❤️</h1>
-    
-    <div class="heart">💖</div>
 
-    <p>
-        From the moment you came into my life,  
-        everything became more beautiful.  
-        You are my happiness, my peace,  
-        and my forever. 💕
-    </p>
+    <div class="romantic-text">
+        You are the most beautiful chapter of my life.  
+        Every moment with you feels like a dream I never want to wake up from.  
+        You are my happiness, my strength, and my forever. 💕  
+    </div>
 
-    <button onclick="showMessage()">Click for a Surprise 💌</button>
+    <div class="photo-section">
+        <!-- ADD YOUR IMAGE LINKS BELOW -->
+        <img src="photo1.jpg">
+        <img src="photo2.jpg">
+    </div>
 
-    <p id="hiddenMessage" style="display:none; margin-top:20px; font-size:22px;">
-        Will you be my forever Valentine? 💍❤️
-    </p>
+    <div class="buttons">
+        <a href="memories.html">
+            <button>Memories 💞</button>
+        </a>
+
+        <a href="diaries.html">
+            <button>Diaries 📖</button>
+        </a>
+    </div>
 </div>
-
-<script>
-function showMessage() {
-    document.getElementById("hiddenMessage").style.display = "block";
-}
-</script>
 
 </body>
 </html>
+
