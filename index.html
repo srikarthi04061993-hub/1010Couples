@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secret Love Portal ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #4a4a4a;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .login-box {
+            background: #5c5c5c;
+            padding: 40px;
+            border-radius: 15px;
+            width: 300px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 20px;
+            background-color: #ff4b7d;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff1f5a;
+        }
+
+        #error {
+            color: #ffb3b3;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="login-box">
+    <h2>Enter Our Secret World ❤️</h2>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Enter</button>
+
+    <div id="error"></div>
+</div>
+
+<script>
+    function login() {
+        var user = document.getElementById("username").value;
+        var pass = document.getElementById("password").value;
+
+        // CHANGE THESE TO YOUR SECRET LOGIN
+        var correctUser = "SriKeerth1010";
+        var correctPass = "0425";
+
+        if(user === correctUser && pass === correctPass) {
+            window.location.href = "home.html";
+        } else {
+            document.getElementById("error").innerHTML = "Wrong username or password ❤️";
+        }
+    }
+</script>
+
+</body>
+</html>
