@@ -76,7 +76,8 @@
         var correctPass = "0425";
 
         if(user === correctUser && pass === correctPass) {
-            window.location.href = "home.html";
+            window.location.replace("home.html");
+
         } else {
             document.getElementById("error").innerHTML = "Wrong username or password ❤️";
         }
